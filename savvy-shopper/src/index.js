@@ -1,14 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import App from './App';
+import Calc from './components/calculator/calc';
+import Greeting from './components/greeting/greeting';
+import Nav from './components/nav_links/nav';
+import Recipe from './components/recipe/recipe';
+import Shopping from './components/shopping_list/shopping';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+	<React.StrictMode>
+		<Calc />
+		<App />
+		<Nav />
+		<Recipe />
+		<Shopping />
+	</React.StrictMode>,
+	document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
