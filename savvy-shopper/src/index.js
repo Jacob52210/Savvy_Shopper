@@ -7,6 +7,7 @@ import Greeting from './components/greeting/greeting';
 import Nav from './components/nav_links/nav';
 import Recipe from './components/recipe/recipe';
 import Shopping from './components/shopping_list/shopping';
+import Todo from './components/todo_list/todo';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
 		<Nav />
 		<Recipe />
 		<Shopping />
+		<Todo />
 	</React.StrictMode>,
 	document.getElementById('root')
 );
