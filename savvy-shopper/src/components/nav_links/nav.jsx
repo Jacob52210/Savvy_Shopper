@@ -5,7 +5,11 @@ import './nav.scss';
 function Nav() {
 	return (
 		<div className="nav">
-			<h1>Hello from nav.jsx</h1>
+			<i className="fas fa-utensils fa-2x"></i>
+			<i className="fas fa-calculator fa-2x"></i>
+			<i className="fas fa-list fa-2x"></i>
+			<i className="fas fa-shopping-cart fa-2x"></i>
+			<i className="fas fa-home fa-4x"></i>
 		</div>
 	);
 }

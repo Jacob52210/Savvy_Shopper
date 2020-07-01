@@ -21,9 +21,8 @@ function App() {
 
 	return (
 		<div className="greeting">
+			<h3>{rightNow}</h3>
 			<h1>{timeOfDay + yourName + '!'}</h1>
-			<h2>{rightNow}</h2>
-			<h1>Hello from greeting.jsx</h1>
 		</div>
 	);
 }

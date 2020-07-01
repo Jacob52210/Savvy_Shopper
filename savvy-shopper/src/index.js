@@ -14,10 +14,10 @@ ReactDOM.render(
 	<React.StrictMode>
 		<Calc />
 		<App />
-		<Nav />
 		<Recipe />
 		<Shopping />
 		<Todo />
+		<Nav />
 	</React.StrictMode>,
 	document.getElementById('root')
 );
