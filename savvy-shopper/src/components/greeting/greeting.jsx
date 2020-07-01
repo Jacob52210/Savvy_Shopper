@@ -19,19 +19,23 @@ function App() {
 	const date = new Date();
 	const hours = date.getHours();
 	const rightNow = date.toLocaleTimeString();
+	let theme;
 
 	let timeOfDay;
 
 	if (hours < 11) {
 		timeOfDay = 'Good Morning, ';
+		theme = 'greeting morning';
 	} else if (hours >= 11 && hours < 17) {
 		timeOfDay = 'Good Afternoon, ';
+		theme = 'greeting afternoon';
 	} else {
 		timeOfDay = 'Good Evening, ';
+		theme = 'greeting night';
 	}
 
 	return (
-		<div className="greeting">
+		<div className={theme}>
 			<h3>{rightNow}</h3>
 			<h1>{timeOfDay + localStorage.getItem('userName') + '!'}</h1>
 		</div>
