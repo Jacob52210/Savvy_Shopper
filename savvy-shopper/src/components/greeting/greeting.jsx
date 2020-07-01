@@ -2,7 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './greeting.scss';
 
-let yourName = prompt('Enter Your Name:');
+function setName() {
+	let yourName = localStorage.getItem('userName');
+
+	if (yourName === null) {
+		return (yourName = localStorage.setItem(
+			'userName',
+			prompt('Enter Your Name:')
+		));
+	}
+}
+
+setName();
 
 function App() {
 	const date = new Date();
@@ -22,7 +33,7 @@ function App() {
 	return (
 		<div className="greeting">
 			<h3>{rightNow}</h3>
-			<h1>{timeOfDay + yourName + '!'}</h1>
+			<h1>{timeOfDay + localStorage.getItem('userName') + '!'}</h1>
 		</div>
 	);
 }
