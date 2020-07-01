@@ -15,13 +15,34 @@ function setName() {
 
 setName();
 
+const daysInWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const monthsInYear = [
+	'Jan',
+	'Feb',
+	'Mar',
+	'Apr',
+	'May',
+	'Jun',
+	'Jul',
+	'Aug',
+	'Sep',
+	'Oct',
+	'Nov',
+	'Dec',
+];
+
 function App() {
 	const date = new Date();
 	const hours = date.getHours();
 	const rightNow = date.toLocaleTimeString();
-	let theme;
+	const dayOfWeek = date.getDay();
+	const month = date.getMonth();
+	const dayOfMonth = date.getDate();
 
+	let theme;
 	let timeOfDay;
+	let today = daysInWeek[dayOfWeek];
+	let thisMonth = monthsInYear[month];
 
 	if (hours < 11) {
 		timeOfDay = 'Good Morning, ';
@@ -36,7 +57,10 @@ function App() {
 
 	return (
 		<div className={theme}>
-			<h3>{rightNow}</h3>
+			<div className="date-time">
+				<h2>{rightNow}</h2>
+				<h2>{today + ', ' + thisMonth + ' ' + dayOfMonth}</h2>
+			</div>
 			<h1>{timeOfDay + localStorage.getItem('userName') + '!'}</h1>
 		</div>
 	);
