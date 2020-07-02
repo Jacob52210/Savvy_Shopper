@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './greeting.scss';
 import { render } from 'react-dom';
 
@@ -16,7 +16,7 @@ const daysInWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const monthsInYear = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 function App() {
-	const date = new Date();
+	const [date, setDate] = useState(new Date());
 	const hours = date.getHours();
 	const rightNow = date.toLocaleTimeString();
 	const dayOfWeek = date.getDay();
@@ -39,6 +39,10 @@ function App() {
 		theme = 'greeting night';
 	}
 
+	useEffect(() => {
+		setInterval(() => setDate(new Date()), 1000);
+	});
+
 	return (
 		<div className={theme}>
 			<div className='date-time'>
@@ -48,10 +52,6 @@ function App() {
 			<h1>{timeOfDay + localStorage.getItem('userName') + '!'}</h1>
 		</div>
 	);
-}
-
-function Greeting() {
-	return setInterval(App, 1000);
 }
 
 export default App;
