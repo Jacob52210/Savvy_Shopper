@@ -12,7 +12,7 @@ $night-theme: rgb(49, 0, 128);
 
 	&.morning {
 		background: linear-gradient(
-				135deg,
+				150deg,
 				rgba($morning-theme, 1),
 				rgba($morning-theme, 0.5),
 				rgba($morning-theme, 0.1),
@@ -42,7 +42,7 @@ $night-theme: rgb(49, 0, 128);
 
 	&.afternoon {
 		background: linear-gradient(
-				135deg,
+				150deg,
 				rgba($afternoon-theme, 1),
 				rgba($afternoon-theme, 0.5),
 				rgba($afternoon-theme, 0.1),
@@ -73,15 +73,13 @@ $night-theme: rgb(49, 0, 128);
 	&.night {
 		color: white;
 		background: linear-gradient(
-				135deg,
+				150deg,
 				rgba($night-theme, 1),
 				rgba($night-theme, 0.5),
-				rgba($night-theme, 0.1),
 				rgba($night-theme, 0),
 				rgba($night-theme, 0),
 				rgba($night-theme, 0),
 				rgba($night-theme, 0.5),
-				rgba($night-theme, 1),
 				rgba($night-theme, 1)
 			),
 			url(../img/night.jpg) bottom center;
