@@ -12,6 +12,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
 	<React.StrictMode>
+		<Greeting />
 		<Calc />
 		<App />
 		<Recipe />
