@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ca3cf4c5064cc46ffd0c5c14696f81e8",
+    "revision": "cd8a96453eda3b83c6f791a055a7f1ba",
     "url": "/Savvy_Shopper/index.html"
   },
   {
-    "revision": "2c9dd58b31d1262a810f",
+    "revision": "999d954dfa2fc841eca8",
     "url": "/Savvy_Shopper/static/css/main.4c9311f0.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Savvy_Shopper/static/js/2.30a9c684.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2c9dd58b31d1262a810f",
-    "url": "/Savvy_Shopper/static/js/main.58a2ae49.chunk.js"
+    "revision": "999d954dfa2fc841eca8",
+    "url": "/Savvy_Shopper/static/js/main.1f99949b.chunk.js"
   },
   {
     "revision": "3015097f3bcb0fa73815",
