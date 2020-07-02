@@ -28,7 +28,7 @@ function App() {
 	let today = daysInWeek[dayOfWeek];
 	let thisMonth = monthsInYear[month];
 
-	if (hours > 11) {
+	if (hours < 11) {
 		timeOfDay = 'Good Morning, ';
 		theme = 'greeting morning';
 	} else if (hours >= 11 && hours < 17) {
