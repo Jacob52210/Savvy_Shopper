@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './greeting.scss';
-import { render } from 'react-dom';
 
 function setName() {
 	let yourName = localStorage.getItem('userName');
@@ -28,14 +27,17 @@ function App() {
 	let today = daysInWeek[dayOfWeek];
 	let thisMonth = monthsInYear[month];
 
-	if (hours < 11) {
+	if (hours >= 5 && hours < 11) {
 		timeOfDay = 'Good Morning, ';
 		theme = 'greeting morning';
 	} else if (hours >= 11 && hours < 17) {
 		timeOfDay = 'Good Afternoon, ';
 		theme = 'greeting afternoon';
-	} else {
+	} else if (hours >= 17 && hours < 24) {
 		timeOfDay = 'Good Evening, ';
+		theme = 'greeting night';
+	} else {
+		timeOfDay = 'Good Morning, ';
 		theme = 'greeting night';
 	}
 
