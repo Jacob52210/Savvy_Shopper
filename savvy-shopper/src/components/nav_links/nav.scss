@@ -1,7 +1,10 @@
-$iconColor: rgb(255, 255, 255);
+$iconColor: rgb(0, 0, 0);
 $iconHover: rgb(255, 0, 0);
 .nav {
 	display: flex;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
 
 	.fa-utensils {
 		color: $iconColor;

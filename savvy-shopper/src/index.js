@@ -10,14 +10,11 @@ import Shopping from './components/shopping_list/shopping';
 import Todo from './components/todo_list/todo';
 import * as serviceWorker from './serviceWorker';
 
+let page = <Recipe />;
+
 ReactDOM.render(
 	<React.StrictMode>
-		<Greeting />
-		<Calc />
-		<App />
-		<Recipe />
-		<Shopping />
-		<Todo />
+		{page}
 		<Nav />
 	</React.StrictMode>,
 	document.getElementById('root')
@@ -27,3 +24,5 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+//  API key =
