@@ -9,6 +9,7 @@ $secondary-color: blue;
 	padding: 1rem;
 	background-color: $primary-color;
 	text-align: center;
+	padding-bottom: 25vh;
 
 	.search-form {
 		padding: 1rem;
@@ -28,7 +29,7 @@ $secondary-color: blue;
 
 	.search-btn {
 		border: none;
-		height: 32px;
+		height: 30px;
 		background-color: $secondary-color;
 		padding-right: 1rem;
 		padding-left: 0.75rem;

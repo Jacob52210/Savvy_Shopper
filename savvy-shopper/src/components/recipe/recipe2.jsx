@@ -5,7 +5,7 @@ const Recipes = ({ title, calories, image, ingredients }) => {
 	return (
 		<div className='cards'>
 			<h1>{title}</h1>
-			<p>{calories} Calories</p>
+			<p>{Math.round(calories)} Calories</p>
 			<img className='food-pics' src={image} alt={title} />
 			<ul>
 				{ingredients.map((ingredient, index) => (
