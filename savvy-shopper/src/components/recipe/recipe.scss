@@ -1,5 +1,5 @@
 $primary-color: lightblue;
-$secondary-color: blue;
+$secondary-color: rgb(0, 140, 255);
 
 * {
 	margin: 0;
@@ -38,6 +38,20 @@ $secondary-color: blue;
 		&:hover {
 			cursor: pointer;
 		}
+	}
+
+	footer {
+		background-color: $secondary-color;
+		background: -webkit-radial-gradient(bottom right, rgb(13, 0, 133), rgba(0, 0, 253, 1), rgba(89, 207, 247, 0.5));
+		border-top: 1px solid black;
+		border-left: 1px solid black;
+		opacity: 1;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		height: 200px;
+		width: 250px;
+		border-radius: 80% 0 0 0;
 	}
 }
 
