@@ -53,6 +53,7 @@ const Recipe = () => {
 					/>
 				))}
 			</div>
+			<footer></footer>
 		</div>
 	);
 };
