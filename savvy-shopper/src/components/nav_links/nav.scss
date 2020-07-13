@@ -1,7 +1,7 @@
 $iconColor: rgb(255, 255, 255);
 $iconHover: rgb(255, 0, 0);
+
 .nav {
-	display: flex;
 	position: fixed;
 	bottom: 1rem;
 	right: 1rem;
@@ -63,6 +63,49 @@ $iconHover: rgb(255, 0, 0);
 		&:hover {
 			color: $iconHover;
 			cursor: pointer;
+		}
+	}
+}
+// ------------------------------- Media Queries ----------------------------------- //
+
+@media screen and (min-width: 960px) {
+	.nav {
+		right: 0;
+		top: 0;
+
+		.fa-utensils {
+			position: fixed;
+			top: 45px;
+			right: 15px;
+			height: 0;
+		}
+
+		.fa-calculator {
+			position: fixed;
+			top: 45px;
+			right: 65px;
+			height: 0;
+		}
+
+		.fa-list {
+			position: fixed;
+			top: 45px;
+			right: 210px;
+			height: 0;
+		}
+
+		.fa-shopping-cart {
+			position: fixed;
+			top: 45px;
+			right: 265px;
+			height: 0;
+		}
+
+		.fa-home {
+			position: fixed;
+			top: 30px;
+			right: 115px;
+			height: 0;
 		}
 	}
 }

@@ -4,7 +4,7 @@ import './recipe.scss';
 const Recipes = ({ title, calories, image, ingredients }) => {
 	return (
 		<div className='cards'>
-			<h1>{title}</h1>
+			<h2>{title}</h2>
 			<p>{Math.round(calories)} Calories</p>
 			<img className='food-pics' src={image} alt={title} />
 			<ul>

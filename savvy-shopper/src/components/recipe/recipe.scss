@@ -12,14 +12,13 @@ $card-shadow: 10px 10px 20px rgb(41, 41, 41);
 	padding: 1rem;
 	background-color: $primary-color;
 	text-align: center;
-	padding-bottom: 25vh;
 
 	.search-form {
 		padding: 1rem;
 	}
 
 	.search-bar {
-		width: 50%;
+		width: 70%;
 		height: 30px;
 		border: none;
 		border-radius: 50px 0 0 50px;
@@ -52,43 +51,100 @@ $card-shadow: 10px 10px 20px rgb(41, 41, 41);
 		right: 0;
 		bottom: 0;
 		height: 200px;
-		width: 250px;
+		width: 235px;
 		border-radius: 80% 0 0 0;
 	}
-}
-// ------------------------------- Search Results Container ------------------------------------//
-.search-results {
-	margin: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
 
-	.cards {
-		background-color: $card-background;
-		width: 250px;
-		margin: 2rem;
-		box-shadow: $card-shadow;
-		padding: 1rem;
-		border-radius: 5px;
-	}
+	// ------------------------------- Search Results Container ------------------------------------//
+	.search-results {
+		margin: 2rem auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
 
-	ul {
-		list-style: none;
-		transform: translateX(-5px);
-	}
+		.cards {
+			text-align: center;
+			background-color: $card-background;
+			width: 250px;
+			height: auto;
+			margin: 0 auto;
+			box-shadow: $card-shadow;
+			padding: 1rem;
+			border-radius: 5px;
+		}
 
-	.food-pics {
-		width: 200px;
-		height: auto;
-		border-radius: 15%;
+		ul {
+			list-style: none;
+			transform: translateX(-5px);
+		}
+
+		.food-pics {
+			width: 200px;
+			height: auto;
+			border-radius: 15%;
+		}
 	}
 }
 
 // -------------------------------------- Media Queries -------------------------------------------//
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 650px) {
+	.Recipe {
+		.search-bar {
+			width: 400px;
+		}
+		.search-results {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 960px) {
+	.Recipe {
+		text-align: left;
+		margin: 0;
+
+		h1 {
+			position: relative;
+			left: 120px;
+			padding-bottom: 1rem;
+			width: fit-content;
+			margin: 0;
+		}
+
+		p {
+			text-align: center;
+		}
+
+		.search-form {
+			padding: 0;
+			padding-bottom: 1rem;
+			width: fit-content;
+		}
+
+		.search-results {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		footer {
+			background: $secondary-color;
+			border-top: 2px solid $border-color;
+			border-bottom: 2px solid $border-color;
+			border-left: 2px solid $border-color;
+			opacity: 0.8;
+			position: fixed;
+			right: 0;
+			top: 1.5rem;
+			height: 70px;
+			width: 325px;
+			border-radius: 50px 0 0 50px;
+		}
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.Recipe {
+		.search-results {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
 }
