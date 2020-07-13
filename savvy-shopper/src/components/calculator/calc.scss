@@ -19,10 +19,8 @@ $card-shadow: 10px 10px 20px rgb(41, 41, 41);
 		width: 235px;
 		border-radius: 80% 0 0 0;
 	}
-}
 
-@media screen and (min-width: 960px) {
-	.calc {
+	@media screen and (min-width: 960px) {
 		footer {
 			background: $secondary-color;
 			border-top: 2px solid $border-color;

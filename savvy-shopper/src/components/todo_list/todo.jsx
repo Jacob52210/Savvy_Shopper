@@ -4,8 +4,9 @@ import './todo.scss';
 
 function Todo() {
 	return (
-		<div className="todo">
+		<div className='todo'>
 			<h1>Hello from todo.jsx</h1>
+			<footer></footer>
 		</div>
 	);
 }

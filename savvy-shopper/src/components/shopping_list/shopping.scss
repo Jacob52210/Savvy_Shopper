@@ -1,3 +1,38 @@
+$primary-color: rgb(248, 194, 46);
+$secondary-color: rgb(253, 98, 8);
+$card-background: white;
+$border-color: black;
+$card-shadow: 10px 10px 20px rgb(41, 41, 41);
+
 .shopping {
 	text-align: center;
+
+	footer {
+		background: $secondary-color;
+		border-top: 2px solid $border-color;
+		border-left: 2px solid $border-color;
+		opacity: 0.8;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		height: 200px;
+		width: 235px;
+		border-radius: 80% 0 0 0;
+	}
+
+	@media screen and (min-width: 960px) {
+		footer {
+			background: $secondary-color;
+			border-top: 2px solid $border-color;
+			border-bottom: 2px solid $border-color;
+			border-left: 2px solid $border-color;
+			opacity: 0.8;
+			position: fixed;
+			right: 0;
+			top: 1.5rem;
+			height: 70px;
+			width: 325px;
+			border-radius: 50px 0 0 50px;
+		}
+	}
 }

@@ -151,4 +151,98 @@ $night-theme: rgb(49, 0, 128);
 		right: 65px;
 		bottom: 25px;
 	}
+	// ------------------------------------- Media Queries ---------------------------------------//
+	@media screen and (min-width: 960px) {
+		.recipes {
+			height: fit-content;
+			position: absolute;
+			right: 15px;
+			top: 100px;
+			transform: rotate(-50deg);
+		}
+		.calc {
+			height: fit-content;
+			position: absolute;
+			right: 60px;
+			top: 110px;
+			transform: rotate(-50deg);
+		}
+		.todo {
+			height: fit-content;
+			position: absolute;
+			right: 210px;
+			top: 100px;
+			transform: rotate(-50deg);
+		}
+		.shopping {
+			height: fit-content;
+			position: absolute;
+			right: 260px;
+			top: 120px;
+			transform: rotate(-50deg);
+		}
+
+		.home {
+			height: fit-content;
+			position: absolute;
+			right: 140px;
+			top: 110px;
+			transform: rotate(-50deg);
+		}
+
+		&.morning {
+			background: linear-gradient(
+					0deg,
+					rgba($morning-theme, 0),
+					rgba($morning-theme, 0),
+					rgba($morning-theme, 0),
+					rgba($morning-theme, 0),
+					rgba($morning-theme, 0),
+					rgba($morning-theme, 0),
+					rgba($morning-theme, 0.5),
+					rgba($morning-theme, 1),
+					rgba($morning-theme, 1)
+				),
+				url(../img/morning.jpg) bottom center;
+			background-position: cover;
+			animation: change 30s ease-in-out infinite;
+		}
+
+		&.afternoon {
+			.description {
+				background-color: rgba(47, 0, 255, 0.5);
+				border-radius: 10px;
+				box-shadow: 10px 10px 20px rgb(41, 41, 41);
+			}
+			background: linear-gradient(
+					0deg,
+					rgba($afternoon-theme, 0),
+					rgba($afternoon-theme, 0),
+					rgba($afternoon-theme, 0),
+					rgba($afternoon-theme, 0),
+					rgba($afternoon-theme, 0),
+					rgba($afternoon-theme, 0.5),
+					rgba($afternoon-theme, 1)
+				),
+				url(../img/afternoon.jpg) bottom center;
+
+			animation: change 30s ease-in-out infinite;
+		}
+
+		&.night {
+			color: white;
+			background: linear-gradient(
+					0deg,
+					rgba($night-theme, 0),
+					rgba($night-theme, 0),
+					rgba($night-theme, 0),
+					rgba($night-theme, 0),
+					rgba($night-theme, 0),
+					rgba($night-theme, 0.5),
+					rgba($night-theme, 1)
+				),
+				url(../img/night.jpg) bottom center;
+			animation: change 30s ease-in-out infinite;
+		}
+	}
 }
