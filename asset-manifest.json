@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Savvy_Shopper/static/css/main.2081670a.chunk.css",
-    "main.js": "/Savvy_Shopper/static/js/main.5d46cc81.chunk.js",
-    "main.js.map": "/Savvy_Shopper/static/js/main.5d46cc81.chunk.js.map",
+    "main.css": "/Savvy_Shopper/static/css/main.506f4eef.chunk.css",
+    "main.js": "/Savvy_Shopper/static/js/main.29d39f45.chunk.js",
+    "main.js.map": "/Savvy_Shopper/static/js/main.29d39f45.chunk.js.map",
     "runtime-main.js": "/Savvy_Shopper/static/js/runtime-main.b07b8092.js",
     "runtime-main.js.map": "/Savvy_Shopper/static/js/runtime-main.b07b8092.js.map",
     "static/js/2.acd46c62.chunk.js": "/Savvy_Shopper/static/js/2.acd46c62.chunk.js",
     "static/js/2.acd46c62.chunk.js.map": "/Savvy_Shopper/static/js/2.acd46c62.chunk.js.map",
     "index.html": "/Savvy_Shopper/index.html",
-    "precache-manifest.5b65287d8fb39ece1bf9830b29d75c80.js": "/Savvy_Shopper/precache-manifest.5b65287d8fb39ece1bf9830b29d75c80.js",
+    "precache-manifest.4651df453a781682402c127096c30772.js": "/Savvy_Shopper/precache-manifest.4651df453a781682402c127096c30772.js",
     "service-worker.js": "/Savvy_Shopper/service-worker.js",
-    "static/css/main.2081670a.chunk.css.map": "/Savvy_Shopper/static/css/main.2081670a.chunk.css.map",
+    "static/css/main.506f4eef.chunk.css.map": "/Savvy_Shopper/static/css/main.506f4eef.chunk.css.map",
     "static/js/2.acd46c62.chunk.js.LICENSE.txt": "/Savvy_Shopper/static/js/2.acd46c62.chunk.js.LICENSE.txt",
     "static/media/greeting.scss": "/Savvy_Shopper/static/media/night.520f8615.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b07b8092.js",
     "static/js/2.acd46c62.chunk.js",
-    "static/css/main.2081670a.chunk.css",
-    "static/js/main.5d46cc81.chunk.js"
+    "static/css/main.506f4eef.chunk.css",
+    "static/js/main.29d39f45.chunk.js"
   ]
 }
