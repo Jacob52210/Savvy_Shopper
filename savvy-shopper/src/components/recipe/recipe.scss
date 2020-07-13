@@ -1,5 +1,8 @@
 $primary-color: rgb(248, 194, 46);
 $secondary-color: rgb(253, 98, 8);
+$card-background: white;
+$border-color: black;
+$card-shadow: 10px 10px 20px rgb(41, 41, 41);
 
 * {
 	margin: 0;
@@ -42,8 +45,8 @@ $secondary-color: rgb(253, 98, 8);
 
 	footer {
 		background: $secondary-color;
-		border-top: 2px solid black;
-		border-left: 2px solid black;
+		border-top: 2px solid $border-color;
+		border-left: 2px solid $border-color;
 		opacity: 0.8;
 		position: fixed;
 		right: 0;
@@ -53,10 +56,9 @@ $secondary-color: rgb(253, 98, 8);
 		border-radius: 80% 0 0 0;
 	}
 }
-
+// ------------------------------- Search Results Container ------------------------------------//
 .search-results {
 	margin: auto;
-	width: 350px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -64,9 +66,10 @@ $secondary-color: rgb(253, 98, 8);
 	flex-wrap: wrap;
 
 	.cards {
-		background-color: white;
+		background-color: $card-background;
+		width: 250px;
 		margin: 2rem;
-		box-shadow: 10px 10px 20px rgb(41, 41, 41);
+		box-shadow: $card-shadow;
 		padding: 1rem;
 		border-radius: 5px;
 	}
@@ -81,4 +84,11 @@ $secondary-color: rgb(253, 98, 8);
 		height: auto;
 		border-radius: 15%;
 	}
+}
+
+// -------------------------------------- Media Queries -------------------------------------------//
+@media screen and (min-width: 800px) {
+}
+
+@media screen and (min-width: 1200px) {
 }

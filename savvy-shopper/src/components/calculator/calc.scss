@@ -1,3 +1,22 @@
+$primary-color: rgb(248, 194, 46);
+$secondary-color: rgb(253, 98, 8);
+$card-background: white;
+$border-color: black;
+$card-shadow: 10px 10px 20px rgb(41, 41, 41);
+
 .calc {
 	text-align: center;
+
+	footer {
+		background: $secondary-color;
+		border-top: 2px solid $border-color;
+		border-left: 2px solid $border-color;
+		opacity: 0.8;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		height: 200px;
+		width: 250px;
+		border-radius: 80% 0 0 0;
+	}
 }
