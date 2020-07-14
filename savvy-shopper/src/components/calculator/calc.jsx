@@ -15,11 +15,19 @@ class Calc extends Component {
 	}
 
 	addToInput = (val) => {
-		this.setState({ input: this.state.input + val });
+		if (isNaN(val) && isNaN(this.state.input[this.state.input.length - 1])) {
+			this.setState({ input: this.state.input });
+		} else {
+			this.setState({ input: this.state.input + val });
+		}
 	};
 
 	handleEqual = () => {
-		this.setState({ input: math.evaluate(this.state.input) });
+		if (isNaN(this.state.input[this.state.input.length - 1])) {
+			this.setState({ input: this.state.input });
+		} else {
+			this.setState({ input: math.evaluate(this.state.input) });
+		}
 	};
 
 	render() {
@@ -60,3 +68,4 @@ class Calc extends Component {
 }
 
 export default Calc;
+// Inspired by Brice Ayres. URL: https://www.youtube.com/watch?v=KzYUuTiHdiY&t=229s

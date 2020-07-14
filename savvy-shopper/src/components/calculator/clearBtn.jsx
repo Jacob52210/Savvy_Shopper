@@ -6,3 +6,4 @@ export const ClearBtn = (props) => (
 		{props.children}
 	</div>
 );
+// Inspired by Brice Ayres. URL: https://www.youtube.com/watch?v=KzYUuTiHdiY&t=229s

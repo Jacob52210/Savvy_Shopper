@@ -1,17 +1,31 @@
+$primary-color: rgb(248, 194, 46);
+$secondary-color: rgb(253, 98, 8);
+$operator-color: white;
+$border-color: black;
+$card-shadow: 10px 10px 20px rgb(41, 41, 41);
+
 .button-wrapper {
-	height: 4em;
+	height: 2em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-weight: lighter;
 	font-size: 1.4em;
 	background-color: #e0e1e6;
 	color: #888;
 	flex: 1;
 	outline: 1px solid #888;
+
+	&:hover {
+		background-color: darkgray;
+		cursor: pointer;
+	}
 }
 
 .operator {
 	background-color: #fe9241;
-	color: white;
+	color: $operator-color;
+
+	&:hover {
+		background-color: $secondary-color;
+	}
 }
