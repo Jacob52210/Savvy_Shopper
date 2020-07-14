@@ -4,8 +4,22 @@ $card-background: white;
 $border-color: black;
 $card-shadow: 10px 10px 20px rgb(41, 41, 41);
 
-.calc {
-	text-align: center;
+.calculator {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	width: 100%;
+
+	.calc-wrapper {
+		width: 400px;
+		height: 600px;
+	}
+
+	.row {
+		display: flex;
+		width: 100%;
+	}
 
 	footer {
 		background: $secondary-color;
