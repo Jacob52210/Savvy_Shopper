@@ -17,6 +17,7 @@ $card-shadow: 10px 10px 20px rgb(41, 41, 41);
 
 	&:hover {
 		background-color: darkgray;
+		color: black;
 		cursor: pointer;
 	}
 }
@@ -27,5 +28,6 @@ $card-shadow: 10px 10px 20px rgb(41, 41, 41);
 
 	&:hover {
 		background-color: $secondary-color;
+		color: white;
 	}
 }

@@ -15,6 +15,10 @@ $card-shadow: 10px 10px 20px rgb(41, 41, 41);
 
 	.search-form {
 		padding: 1rem;
+
+		& input:focus {
+			outline: none;
+		}
 	}
 
 	.search-bar {
@@ -23,10 +27,6 @@ $card-shadow: 10px 10px 20px rgb(41, 41, 41);
 		border: none;
 		border-radius: 50px 0 0 50px;
 		padding-left: 1rem;
-
-		&:hover {
-			cursor: text;
-		}
 	}
 
 	.search-btn {
@@ -36,10 +36,6 @@ $card-shadow: 10px 10px 20px rgb(41, 41, 41);
 		padding-right: 1rem;
 		padding-left: 0.75rem;
 		border-radius: 0 50px 50px 0;
-
-		&:hover {
-			cursor: pointer;
-		}
 	}
 
 	footer {

@@ -4,8 +4,46 @@ $card-background: white;
 $border-color: black;
 $card-shadow: 10px 10px 20px rgb(41, 41, 41);
 
+body {
+	background-color: $primary-color;
+}
+
 .shopping {
 	text-align: center;
+
+	.shopping-form {
+		padding: 10px;
+
+		& input:focus {
+			outline: none;
+		}
+	}
+
+	.list-container {
+		background-color: $card-background;
+		min-height: 400px;
+		max-width: 300px;
+		margin: 10px auto;
+		box-shadow: $card-shadow;
+		border-radius: 5px;
+	}
+
+	.search-bar {
+		width: 70%;
+		height: 30px;
+		border: none;
+		border-radius: 50px 0 0 50px;
+		padding-left: 1rem;
+	}
+
+	.search-btn {
+		border: none;
+		height: 30px;
+		background-color: $secondary-color;
+		padding-right: 1rem;
+		padding-left: 0.75rem;
+		border-radius: 0 50px 50px 0;
+	}
 
 	footer {
 		background: $secondary-color;
