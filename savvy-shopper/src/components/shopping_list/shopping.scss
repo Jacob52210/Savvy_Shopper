@@ -42,11 +42,16 @@ body {
 
 	.search-btn {
 		border: none;
+		outline: none;
 		height: 30px;
 		background-color: $secondary-color;
 		padding-right: 1rem;
 		padding-left: 0.75rem;
 		border-radius: 0 50px 50px 0;
+
+		&:hover {
+			background-color: rgb(255, 0, 0);
+		}
 	}
 
 	.clear-btn {
@@ -63,6 +68,7 @@ body {
 
 		&:hover {
 			cursor: pointer;
+			background-color: rgb(255, 0, 0);
 		}
 	}
 
