@@ -8,11 +8,13 @@ body {
 	background-color: $primary-color;
 }
 
-.shopping {
+.shopping-app {
 	text-align: center;
+	width: 100vw;
+	height: 100vh;
 
-	.shopping-form {
-		padding: 10px;
+	.search-form {
+		padding: 1rem;
 
 		& input:focus {
 			outline: none;
@@ -20,16 +22,18 @@ body {
 	}
 
 	.list-container {
+		text-align: left;
 		background-color: $card-background;
-		min-height: 400px;
-		max-width: 300px;
+		padding: 10px;
+		height: 40vh;
+		width: 70vw;
 		margin: 10px auto;
 		box-shadow: $card-shadow;
 		border-radius: 5px;
 	}
 
 	.search-bar {
-		width: 70%;
+		width: 250px;
 		height: 30px;
 		border: none;
 		border-radius: 50px 0 0 50px;
@@ -43,6 +47,23 @@ body {
 		padding-right: 1rem;
 		padding-left: 0.75rem;
 		border-radius: 0 50px 50px 0;
+	}
+
+	.clear-btn {
+		margin-top: 20px;
+		padding: 10px;
+		border: none;
+		border-radius: 20px;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		outline: none;
+		background-color: $secondary-color;
+		color: white;
+
+		&:hover {
+			cursor: pointer;
+		}
 	}
 
 	footer {

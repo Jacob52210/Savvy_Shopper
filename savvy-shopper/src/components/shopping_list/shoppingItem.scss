@@ -1,0 +1,15 @@
+.item-container {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+
+	.shopping-item {
+		cursor: pointer;
+		padding: 5px;
+		width: fit-content;
+	}
+
+	.completed {
+		text-decoration: line-through;
+	}
+}

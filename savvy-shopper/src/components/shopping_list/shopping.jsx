@@ -1,69 +1,68 @@
 import React, { Component } from 'react';
 import './shopping.scss';
-import ListItems from './list-items';
+import ListItems from './listItems';
+import AddItems from './addItems';
 
 export default class Shopping extends Component {
-	constructor(props) {
-		super(props);
+	constructor() {
+		super();
 		this.state = {
 			items: [],
-			currentItem: {
-				text: '',
-				key: '',
-			},
 		};
-		this.handleInput = this.handleInput.bind(this);
-		this.addItem = this.addItem.bind(this);
-	}
-
-	handleInput(e) {
-		this.setState({
-			currentItem: {
-				text: e.target.value,
-				key: Date.now(),
-			},
-		});
-	}
-
-	addItem(e) {
-		e.preventDefault();
-		const newItem = this.state.currentItem;
-		console.log(newItem);
-		if (newItem.text !== '') {
-			const newItems = [...this.state.items, newItem];
-			this.setState({
-				items: newItems,
-				currentItem: {
-					text: '',
-					key: '',
-				},
-			});
-		}
 	}
 
 	render() {
 		return (
-			<div className='shopping'>
-				<header>
-					<h1>Shopping List</h1>
-					<form className='shopping-form' onSubmit={this.addItem}>
-						<input
-							type='text'
-							className='search-bar'
-							placeholder='Add Item'
-							value={this.state.currentItem.text}
-							onChange={this.handleInput}
-						/>
-						<button type='submit' className='search-btn'>
-							Add
-						</button>
-					</form>
-				</header>
-				<div className='list-container'>
-					<ListItems items={this.state.items}></ListItems>
-				</div>
+			<div className='shopping-app'>
+				<h1>Shopping List</h1>
+				<AddItems addItemFn={this.addItem} />
+				<ListItems updateItemFn={this.updateItem} items={this.state.items} />
+				<button onClick={this.clearItems} className='clear-btn'>
+					Clear
+				</button>
 				<footer></footer>
 			</div>
 		);
 	}
+
+	componentDidMount = () => {
+		const items = localStorage.getItem('items');
+		if (items) {
+			const savedItems = JSON.parse(items);
+			this.setState({ items: savedItems });
+		} else {
+		}
+	};
+
+	addItem = async (item) => {
+		await this.setState({
+			items: [
+				...this.state.items,
+				{
+					text: item,
+					completed: false,
+				},
+			],
+		});
+		localStorage.setItem('items', JSON.stringify(this.state.items));
+		console.log(localStorage.getItem('items'));
+	};
+
+	updateItem = async (item) => {
+		const newItems = this.state.items.map((_item) => {
+			if (item === _item)
+				return {
+					text: item.text,
+					completed: !item.completed,
+				};
+			else return _item;
+		});
+		await this.setState({ items: newItems });
+		localStorage.setItem('items', JSON.stringify(this.state.items));
+	};
+
+	clearItems = () => {
+		localStorage.removeItem('items');
+	};
 }
+// Inspired by PortEXE. URL: https://www.youtube.com/watch?v=ZcD5rJKm3Lk&t=2060s
