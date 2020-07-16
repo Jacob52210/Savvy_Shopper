@@ -7,6 +7,19 @@ $card-shadow: 10px 10px 20px rgb(41, 41, 41);
 .todo {
 	text-align: center;
 
+	.todo-item {
+		cursor: pointer;
+		padding: 5px;
+		width: fit-content;
+		font-size: 20px;
+		margin: auto;
+	}
+
+	.completed {
+		text-decoration: line-through;
+		color: red;
+	}
+
 	footer {
 		background: $secondary-color;
 		border-top: 2px solid $border-color;
