@@ -16,6 +16,9 @@ export default class Shopping extends Component {
 			<div className='shopping-app'>
 				<h1>Shopping List</h1>
 				<AddItems addItemFn={this.addItem} />
+				<p>
+					For meal ideas, check out our <i className='fas fa-utensils'></i> page!
+				</p>
 				<ListItems updateItemFn={this.updateItem} items={this.state.items} />
 				<button onClick={this.clearItems} className='clear-btn'>
 					Clear
@@ -45,7 +48,6 @@ export default class Shopping extends Component {
 			],
 		});
 		localStorage.setItem('items', JSON.stringify(this.state.items));
-		console.log(localStorage.getItem('items'));
 	};
 
 	updateItem = async (item) => {
