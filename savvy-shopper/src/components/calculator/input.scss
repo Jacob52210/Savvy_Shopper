@@ -1,5 +1,6 @@
 .input {
-	height: 2em;
+	min-height: 2em;
+	max-height: fit-content;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -8,4 +9,5 @@
 	background-color: black;
 	color: white;
 	padding: 5px;
+	word-break: break-word;
 }

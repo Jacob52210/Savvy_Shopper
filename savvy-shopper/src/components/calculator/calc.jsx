@@ -34,7 +34,7 @@ class Calc extends Component {
 		return (
 			<div className='calculator'>
 				<div className='calc-wrapper'>
-					<Input input={this.state.input}></Input>
+					<Input input={this.state.input} />
 					<div className='row'>
 						<Button handleClick={this.addToInput}>7</Button>
 						<Button handleClick={this.addToInput}>8</Button>
