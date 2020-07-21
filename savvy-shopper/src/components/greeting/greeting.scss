@@ -24,7 +24,7 @@ $night-theme: rgb(49, 0, 128);
 				rgba($morning-theme, 1)
 			),
 			url(../img/morning.jpg) bottom center;
-		background-position: cover;
+
 		animation: change 90s ease-in-out infinite;
 
 		@keyframes change {
@@ -41,11 +41,6 @@ $night-theme: rgb(49, 0, 128);
 	}
 
 	&.afternoon {
-		.description {
-			background-color: rgba(47, 0, 255, 0.5);
-			border-radius: 10px;
-			box-shadow: 10px 10px 20px rgb(41, 41, 41);
-		}
 		background: linear-gradient(
 				150deg,
 				rgba($afternoon-theme, 1),
@@ -59,7 +54,7 @@ $night-theme: rgb(49, 0, 128);
 				rgba($afternoon-theme, 1)
 			),
 			url(../img/afternoon.jpg) bottom center;
-		background-position: cover;
+
 		animation: change 90s ease-in-out infinite;
 
 		@keyframes change {
@@ -88,7 +83,7 @@ $night-theme: rgb(49, 0, 128);
 				rgba($night-theme, 1)
 			),
 			url(../img/night.jpg) bottom center;
-		background-position: cover;
+
 		animation: change 90s ease-in-out infinite;
 
 		@keyframes change {
@@ -204,7 +199,6 @@ $night-theme: rgb(49, 0, 128);
 					rgba($morning-theme, 1)
 				),
 				url(../img/morning.jpg) bottom center;
-			background-position: cover;
 			animation: change 30s ease-in-out infinite;
 		}
 
@@ -225,7 +219,6 @@ $night-theme: rgb(49, 0, 128);
 					rgba($afternoon-theme, 1)
 				),
 				url(../img/afternoon.jpg) bottom center;
-
 			animation: change 30s ease-in-out infinite;
 		}
 

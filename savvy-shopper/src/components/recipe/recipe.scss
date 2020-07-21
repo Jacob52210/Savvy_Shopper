@@ -38,10 +38,7 @@ $card-shadow: 10px 10px 20px rgb(41, 41, 41);
 		padding-left: 0.75rem;
 		border-radius: 0 50px 50px 0;
 		outline: none;
-
-		&:hover {
-			background-color: rgb(255, 0, 0);
-		}
+		cursor: pointer;
 	}
 
 	footer {

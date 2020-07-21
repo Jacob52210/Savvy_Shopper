@@ -15,7 +15,6 @@ const monthsInYear = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'S
 
 function App() {
 	const [date, setDate] = useState(new Date());
-	//	const [intervalTimeout, setIntervalTimeout] = useState(null);
 	const hours = date.getHours();
 	const rightNow = date.toLocaleTimeString();
 	const dayOfWeek = date.getDay();
