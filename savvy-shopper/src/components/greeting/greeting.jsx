@@ -13,7 +13,7 @@ setName();
 const daysInWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const monthsInYear = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-function App() {
+function Greeting() {
 	const [date, setDate] = useState(new Date());
 	const hours = date.getHours();
 	const rightNow = date.toLocaleTimeString();
@@ -67,4 +67,4 @@ function App() {
 	);
 }
 
-export default App;
+export default Greeting;

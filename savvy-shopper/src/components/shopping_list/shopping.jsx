@@ -19,7 +19,7 @@ export default class Shopping extends Component {
 				<p>
 					For meal ideas, check out our <i className='fas fa-utensils'></i> page!
 				</p>
-				<ListItems updateItemFn={this.updateItem} items={this.state.items} />
+				<ListItems deleteItemFn={this.deleteItem} updateItemFn={this.updateItem} items={this.state.items} />
 				<button onClick={this.clearItems} className='clear-btn'>
 					Clear
 				</button>
@@ -48,6 +48,13 @@ export default class Shopping extends Component {
 			],
 		});
 		localStorage.setItem('items', JSON.stringify(this.state.items));
+	};
+
+	deleteItem = async (item) => {
+		await this.setState({
+			item: [],
+		});
+		localStorage.removeItem('items', JSON.stringify(this.state.item));
 	};
 
 	updateItem = async (item) => {

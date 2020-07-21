@@ -5,11 +5,18 @@ export default class ShoppingItem extends Component {
 		const { item } = this.props;
 
 		return (
-			<div className='item-container' onClick={this.toggleItem}>
-				<h5 className={'shopping-item' + (item.completed ? ' completed' : '')}>{item.text}</h5>
+			<div className='item-container'>
+				<h5 onClick={this.toggleItem} className={'shopping-item' + (item.completed ? ' completed' : '')}>
+					{item.text}
+				</h5>
+				<i onClick={this.deleteItem} className='fas fa-trash-alt'></i>
 			</div>
 		);
 	}
+
+	deleteItem = () => {
+		this.props.deleteItemFn(this.props.item);
+	};
 
 	toggleItem = () => {
 		this.props.updateItemFn(this.props.item);

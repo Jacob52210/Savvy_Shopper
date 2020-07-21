@@ -1,12 +1,21 @@
-.shopping-item {
-	cursor: pointer;
-	padding: 5px;
-	width: fit-content;
-	font-size: 20px;
-	margin: auto;
-}
+.item-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-.completed {
-	text-decoration: line-through;
-	color: red;
+	.shopping-item {
+		cursor: pointer;
+		padding: 5px;
+		width: fit-content;
+		font-size: 20px;
+	}
+
+	.fa-trash-alt {
+		cursor: pointer;
+	}
+
+	.completed {
+		text-decoration: line-through;
+		color: red;
+	}
 }

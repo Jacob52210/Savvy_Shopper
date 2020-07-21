@@ -8,11 +8,17 @@ export default class ListItems extends Component {
 		return (
 			<div className='list-container'>
 				{items.map((_item, _index) => {
-					return <ShoppingItem updateItemFn={this.updateItem} key={_index} item={_item} />;
+					return (
+						<ShoppingItem deleteItemFn={this.deleteItem} updateItemFn={this.updateItem} key={_index} item={_item} />
+					);
 				})}
 			</div>
 		);
 	}
+
+	deleteItem = () => {
+		this.props.deleteItemFn(this.props.item);
+	};
 
 	updateItem = (item) => {
 		this.props.updateItemFn(item);
