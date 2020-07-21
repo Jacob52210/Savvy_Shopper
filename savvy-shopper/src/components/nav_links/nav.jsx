@@ -6,7 +6,7 @@ import Shopping from '../shopping_list/shopping';
 import Recipe from '../recipe/recipe';
 import Todo from '../todo_list/todo';
 
-function Nav() {
+function App() {
 	const [page, setPage] = React.useState('Greeting');
 
 	return (
@@ -33,4 +33,4 @@ function Nav() {
 	);
 }
 
-export default Nav;
+export default App;
