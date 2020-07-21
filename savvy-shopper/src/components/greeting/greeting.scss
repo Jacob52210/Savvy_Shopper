@@ -23,7 +23,7 @@ $night-theme: rgb(49, 0, 128);
 				rgba($morning-theme, 1),
 				rgba($morning-theme, 1)
 			),
-			url(../img/morning.jpg) bottom center;
+			url(./img/morning.jpg) bottom center;
 
 		animation: change 90s ease-in-out infinite;
 
@@ -53,7 +53,7 @@ $night-theme: rgb(49, 0, 128);
 				rgba($afternoon-theme, 1),
 				rgba($afternoon-theme, 1)
 			),
-			url(../img/afternoon.jpg) bottom center;
+			url(./img/afternoon.jpg) bottom center;
 
 		animation: change 90s ease-in-out infinite;
 
@@ -82,7 +82,7 @@ $night-theme: rgb(49, 0, 128);
 				rgba($night-theme, 0.5),
 				rgba($night-theme, 1)
 			),
-			url(../img/night.jpg) bottom center;
+			url(./img/night.jpg) bottom center;
 
 		animation: change 90s ease-in-out infinite;
 
@@ -198,7 +198,7 @@ $night-theme: rgb(49, 0, 128);
 					rgba($morning-theme, 1),
 					rgba($morning-theme, 1)
 				),
-				url(../img/morning.jpg) bottom center;
+				url(./img/morning.jpg) bottom center;
 			animation: change 30s ease-in-out infinite;
 		}
 
@@ -218,7 +218,7 @@ $night-theme: rgb(49, 0, 128);
 					rgba($afternoon-theme, 0.5),
 					rgba($afternoon-theme, 1)
 				),
-				url(../img/afternoon.jpg) bottom center;
+				url(./img/afternoon.jpg) bottom center;
 			animation: change 30s ease-in-out infinite;
 		}
 
@@ -234,7 +234,7 @@ $night-theme: rgb(49, 0, 128);
 					rgba($night-theme, 0.5),
 					rgba($night-theme, 1)
 				),
-				url(../img/night.jpg) bottom center;
+				url(./img/night.jpg) bottom center;
 			animation: change 30s ease-in-out infinite;
 		}
 	}
