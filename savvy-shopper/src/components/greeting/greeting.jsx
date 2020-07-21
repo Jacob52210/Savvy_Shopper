@@ -61,8 +61,6 @@ function App() {
 			</div>
 			<h1>{timeOfDay + localStorage.getItem('userName') + '!'}</h1>
 			<h5 className='recipes'>Recipes</h5>
-			<h5 className='calc'>Calculator</h5>
-			<h5 className='todo'>Todo List</h5>
 			<h5 className='shopping'>Shopping List</h5>
 			<h5 className='home'>Home</h5>
 		</div>
