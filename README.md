@@ -1,7 +1,7 @@
 # Savvy Shopper
 *By: Jacob Flora*
 ## Description
-*This is an app to help you stay organized and on budget while shopping.*
+*This is an app to help you stay organized while shopping.*
 #### Hosted [HERE](https://jacob52210.github.io/Savvy_Shopper/  "Savvy Shopper").
 ___
 ## User Stories
