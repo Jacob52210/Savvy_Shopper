@@ -33,28 +33,27 @@ export default class Shopping extends Component {
 		if (items) {
 			const savedItems = JSON.parse(items);
 			this.setState({ items: savedItems });
+			console.log(savedItems);
 		} else {
 		}
 	};
 
 	addItem = async (item) => {
-		await this.setState({
-			items: [
-				...this.state.items,
-				{
-					text: item,
-					completed: false,
-				},
-			],
-		});
+		if (document.getElementById('addItemInput').value.trim() === '') {
+			return;
+		} else {
+			await this.setState({
+				items: [
+					...this.state.items,
+					{
+						text: item,
+						key: Date.now(),
+						completed: false,
+					},
+				],
+			});
+		}
 		localStorage.setItem('items', JSON.stringify(this.state.items));
-	};
-
-	deleteItem = async (item) => {
-		await this.setState({
-			item: [],
-		});
-		localStorage.removeItem('items', JSON.stringify(this.state.item));
 	};
 
 	updateItem = async (item) => {

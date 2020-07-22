@@ -16,10 +16,6 @@ export default class ListItems extends Component {
 		);
 	}
 
-	deleteItem = () => {
-		this.props.deleteItemFn(this.props.item);
-	};
-
 	updateItem = (item) => {
 		this.props.updateItemFn(item);
 	};
