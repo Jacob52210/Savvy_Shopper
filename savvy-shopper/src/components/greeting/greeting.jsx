@@ -3,7 +3,7 @@ import './greeting.scss';
 
 function setName() {
 	let yourName = localStorage.getItem('userName');
-	if (yourName === null) {
+	if (yourName === null || yourName === '') {
 		return (yourName = localStorage.setItem('userName', prompt('Enter Your Name:')));
 	}
 }

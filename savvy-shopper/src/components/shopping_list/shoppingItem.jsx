@@ -14,15 +14,12 @@ export default class ShoppingItem extends Component {
 		);
 	}
 
-	deleteItem = (savedItems) => {
-		console.log('Delete button is linked to a function.');
-		//let arr = this.state.savedItems;
-		//arr.splice(index, 1);
-		//this.setState({ items: arr });
-	};
-
 	toggleItem = () => {
 		this.props.updateItemFn(this.props.item);
+	};
+
+	deleteItem = () => {
+		this.props.deleteItemFn(this.props.item);
 	};
 }
 // Inspired by PortEXE. URL: https://www.youtube.com/watch?v=ZcD5rJKm3Lk&t=2060s

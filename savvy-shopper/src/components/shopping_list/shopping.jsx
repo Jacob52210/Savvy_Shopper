@@ -17,9 +17,9 @@ export default class Shopping extends Component {
 				<h1>Shopping List</h1>
 				<AddItems addItemFn={this.addItem} />
 				<p>
-					For meal ideas, check out our <i className='fas fa-utensils'></i> page!
+					For meal ideas, check out our <i className='fas fa-utensils' /> page!
 				</p>
-				<ListItems deleteItemFn={this.deleteItem} updateItemFn={this.updateItem} items={this.state.items} />
+				<ListItems updateItemFn={this.updateItem} items={this.state.items} />
 				<button onClick={this.clearItems} className='clear-btn'>
 					Clear
 				</button>
@@ -33,7 +33,6 @@ export default class Shopping extends Component {
 		if (items) {
 			const savedItems = JSON.parse(items);
 			this.setState({ items: savedItems });
-			console.log(savedItems);
 		} else {
 		}
 	};
@@ -61,6 +60,7 @@ export default class Shopping extends Component {
 			if (item === _item)
 				return {
 					text: item.text,
+					key: item.key,
 					completed: !item.completed,
 				};
 			else return _item;
@@ -69,7 +69,10 @@ export default class Shopping extends Component {
 		localStorage.setItem('items', JSON.stringify(this.state.items));
 	};
 
-	clearItems = () => {
+	clearItems = (items) => {
+		var newList = this.state.items;
+		newList.splice(items);
+		this.setState({ items: newList });
 		localStorage.removeItem('items');
 	};
 }
