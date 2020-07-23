@@ -20,12 +20,8 @@ export default class ListItems extends Component {
 		this.props.updateItemFn(item);
 	};
 
-	deleteItem = (item, _index) => {
-		//console.log(item);
-		console.log(this.props.items);
-		var newList = this.props.items;
-		newList.splice(item, 0);
-		this.setState({ items: newList });
+	deleteItem = (items) => {
+		delete this.props.items[1];
 	};
 }
 // Inspired by PortEXE. URL: https://www.youtube.com/watch?v=ZcD5rJKm3Lk&t=2060s
