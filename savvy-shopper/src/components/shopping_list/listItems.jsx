@@ -20,8 +20,8 @@ export default class ListItems extends Component {
 		this.props.updateItemFn(item);
 	};
 
-	deleteItem = (items) => {
-		delete this.props.items[1];
+	deleteItem = (item) => {
+		this.props.deleteItemFn(item);
 	};
 }
 // Inspired by PortEXE. URL: https://www.youtube.com/watch?v=ZcD5rJKm3Lk&t=2060s

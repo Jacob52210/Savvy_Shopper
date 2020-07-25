@@ -19,7 +19,7 @@ export default class Shopping extends Component {
 				<p>
 					For meal ideas, check out our <i className='fas fa-utensils' /> page!
 				</p>
-				<ListItems updateItemFn={this.updateItem} items={this.state.items} />
+				<ListItems deleteItemFn={this.deleteItem} updateItemFn={this.updateItem} items={this.state.items} />
 				<button onClick={this.clearItems} className='clear-btn'>
 					Clear
 				</button>
@@ -42,14 +42,7 @@ export default class Shopping extends Component {
 			return;
 		} else {
 			await this.setState({
-				items: [
-					...this.state.items,
-					{
-						text: item,
-						key: Date.now(),
-						completed: false,
-					},
-				],
+				items: [...this.state.items, { text: item, key: Date.now(), completed: false }],
 			});
 		}
 		localStorage.setItem('items', JSON.stringify(this.state.items));
@@ -69,10 +62,17 @@ export default class Shopping extends Component {
 		localStorage.setItem('items', JSON.stringify(this.state.items));
 	};
 
+	deleteItem = (thisItem) => {
+		let visibleItems = this.state.items;
+		visibleItems = visibleItems.filter((visibleItems) => visibleItems !== thisItem);
+		this.setState({ items: visibleItems });
+		localStorage.setItem('items', JSON.stringify(visibleItems));
+	};
+
 	clearItems = (items) => {
-		var newList = this.state.items;
-		newList.splice(items);
-		this.setState({ items: newList });
+		var clearList = this.state.items;
+		clearList.splice(items);
+		this.setState({ items: clearList });
 		localStorage.removeItem('items');
 	};
 }
