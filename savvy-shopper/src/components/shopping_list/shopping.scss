@@ -27,6 +27,14 @@ body {
 		}
 	}
 
+	.fa-plus {
+		color: white;
+
+		&:hover {
+			color: black;
+		}
+	}
+
 	.fa-utensils {
 		padding: 5px;
 	}
@@ -66,6 +74,8 @@ body {
 
 	.clear-btn {
 		margin-bottom: 200px;
+		font-size: 20px;
+		font-weight: bolder;
 		padding: 10px;
 		border: none;
 		border-radius: 10px;
@@ -77,6 +87,10 @@ body {
 		color: white;
 		box-shadow: $card-shadow;
 		cursor: pointer;
+
+		&:hover {
+			color: black;
+		}
 	}
 
 	footer {

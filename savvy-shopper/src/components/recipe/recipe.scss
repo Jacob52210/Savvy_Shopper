@@ -22,6 +22,14 @@ $card-shadow: 10px 10px 20px rgb(41, 41, 41);
 		}
 	}
 
+	.fa-search {
+		color: white;
+
+		&:hover {
+			color: black;
+		}
+	}
+
 	.search-bar {
 		width: 70%;
 		height: 30px;

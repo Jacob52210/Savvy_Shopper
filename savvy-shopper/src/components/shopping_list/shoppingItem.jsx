@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './shoppingItem.scss';
+
 export default class ShoppingItem extends Component {
 	render() {
 		const { item } = this.props;
