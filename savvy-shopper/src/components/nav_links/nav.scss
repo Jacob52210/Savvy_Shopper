@@ -18,6 +18,18 @@ $iconHover: black;
 		}
 	}
 
+	.fa-user {
+		color: $iconColor;
+		position: absolute;
+		right: 7rem;
+		bottom: 6rem;
+		cursor: pointer;
+
+		&:hover {
+			color: $iconHover;
+		}
+	}
+
 	.fa-shopping-cart {
 		color: $iconColor;
 		position: absolute;
@@ -52,22 +64,14 @@ $iconHover: black;
 		.fa-utensils {
 			position: fixed;
 			top: 45px;
-			right: 15px;
+			right: 115px;
 			height: 0;
 		}
 
-		.fa-calculator {
+		.fa-user {
 			position: fixed;
 			top: 45px;
-			right: 65px;
-			height: 0;
-		}
-
-		.fa-list {
-			position: fixed;
-			top: 45px;
-			right: 210px;
-			height: 0;
+			right: 190px;
 		}
 
 		.fa-shopping-cart {
@@ -80,7 +84,7 @@ $iconHover: black;
 		.fa-home {
 			position: fixed;
 			top: 30px;
-			right: 115px;
+			right: 15px;
 			height: 0;
 		}
 	}

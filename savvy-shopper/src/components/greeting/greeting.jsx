@@ -60,9 +60,6 @@ function Greeting() {
 				<h2>{today + ', ' + thisMonth + ' ' + dayOfMonth}</h2>
 			</div>
 			<h1>{timeOfDay + localStorage.getItem('userName') + '!'}</h1>
-			<h5 className='recipes'>Recipes</h5>
-			<h5 className='shopping'>Shopping List</h5>
-			<h5 className='home'>Home</h5>
 		</div>
 	);
 }
