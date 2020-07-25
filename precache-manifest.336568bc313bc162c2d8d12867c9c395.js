@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6afe12bba979a43236a9b5e53d25f04f",
+    "revision": "2fd0b9e4addbdb85972648d27c14346e",
     "url": "/Savvy_Shopper/index.html"
   },
   {
-    "revision": "64531e0f4f05f2113c18",
-    "url": "/Savvy_Shopper/static/css/main.38502016.chunk.css"
+    "revision": "6de58d467cc49ca0a873",
+    "url": "/Savvy_Shopper/static/css/main.4d0494c9.chunk.css"
   },
   {
     "revision": "153782af1cfed6efb694",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Savvy_Shopper/static/js/2.49ff2d65.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "64531e0f4f05f2113c18",
-    "url": "/Savvy_Shopper/static/js/main.0c53f81b.chunk.js"
+    "revision": "6de58d467cc49ca0a873",
+    "url": "/Savvy_Shopper/static/js/main.aa106231.chunk.js"
   },
   {
     "revision": "3015097f3bcb0fa73815",
